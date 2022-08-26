@@ -1,1 +1,13 @@
-@import './common';
+@import './other/common';
+@import './other/reset';
+@import './other/other-style';
+
+@import './utils';
+
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/offerings.scss';
+@import './components/favorites.scss';
+@import './components/customers.scss';
+@import './components/subscribe.scss';
+@import './components/footer.scss';
