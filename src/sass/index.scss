@@ -2,7 +2,9 @@
 @import './other/reset';
 @import './other/other-style';
 
-@import './utils';
+@import './utils/colors';
+@import './utils/placeholder';
+@import './utils/mixins';
 
 @import './components/header.scss';
 @import './components/hero.scss';
