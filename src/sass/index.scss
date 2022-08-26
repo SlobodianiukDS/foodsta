@@ -1,10 +1,10 @@
-@import './other/common';
-@import './other/reset';
-@import './other/basis';
-
 @import './utils/colors';
 @import './utils/placeholder';
 @import './utils/mixins';
+
+@import './other/common';
+@import './other/reset';
+@import './other/other-style';
 
 @import './components/header.scss';
 @import './components/hero.scss';
