@@ -89,7 +89,6 @@
 }
 
 .customers__text {
-  font-style: normal;
   @include text(16px, 19px, 700);
   margin-bottom: 40px;
 
@@ -121,11 +120,9 @@
 }
 
 .customer__name {
-  font-style: normal;
   @include text(14px, 21px, 500);
 }
 
 .customer__role {
-  font-style: normal;
   @include text(14px, 21px, 400);
 }
