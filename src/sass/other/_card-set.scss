@@ -1,0 +1,17 @@
+$card-gap: 32px;
+$card-item: 1;
+
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $card-gap;
+
+    @include mq(tab) {
+        $card-item: 2;
+    }
+}
+
+.card-item {
+    flex-basis: calc((100% - ($card-item - 1) * $card-gap) / $card-item);
+}

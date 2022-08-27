@@ -38,3 +38,17 @@
     }
   }
 }
+
+@mixin hov {
+  &:hover,
+  &:focus{
+    @content;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@mixin text($type1: 14px, $type2: 16px, $type3: 400){
+    font-weight: $type3;
+    font-size: $type1;
+    line-height: calc($type2 / $type1);
+}

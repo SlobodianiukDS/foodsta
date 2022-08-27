@@ -5,11 +5,15 @@
 @import './other/common';
 @import './other/reset';
 @import './other/other-style';
+@import './other/card-set';
 
-@import './components/header.scss';
-@import './components/hero.scss';
-@import './components/offerings.scss';
-@import './components/favorites.scss';
-@import './components/customers.scss';
-@import './components/subscribe.scss';
-@import './components/footer.scss';
+@import './components/button';
+@import './components/navigation';
+@import './components/input';
+@import './components/header';
+@import './components/hero';
+@import './components/offerings';
+@import './components/favorites';
+@import './components/customers';
+@import './components/subscribe';
+@import './components/footer';
