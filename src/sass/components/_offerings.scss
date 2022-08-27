@@ -33,9 +33,6 @@ padding-top: 177px;
         
 }
 
-&__container {
-    padding: 20px 28px;
-}
     &__thumb {
         @include mq (desk) {
 display: flex;
