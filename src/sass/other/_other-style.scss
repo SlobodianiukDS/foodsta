@@ -1,51 +1,53 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    @include text();
-    color: $textPrimaryCol;
+body {
+  font-family: 'Roboto', sans-serif;
+  @include text();
+  color: $textPrimaryCol;
 }
 
-.container{
-    width: 320px;
-    padding: 0 20px;
-    margin: 0 auto;
-    @include mq(tab){
-        width: 768px;
-        padding: 0 32px;
-    };
-    @include mq(desk){
-        width: 1280px;
-        padding: 0 16px;
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  @include mq(mob) {
+    width: 480px;
+  }
+  @include mq(tab) {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @include mq(desk) {
+    width: 1280px;
+    padding: 0 16px;
+  }
 }
-}
-.section{
-    padding: 60px 0;
-    @include mq(tab){
+.section {
+  padding: 60px 0;
+  @include mq(tab) {
     padding: 100px 0;
-    };
+  }
 }
 
 // контейнер для позиционированния (можно использовать и на списки(ul) )
 .box {
-    display: block;
-    position: relative;   
+  display: block;
+  position: relative;
 }
 
 // для скрытия информации
 
 // скрытый текст, в основном для скрытия заголовков которых не должно быть для семантики
 .text-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 // скрытый блок, для модалок в основном
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
