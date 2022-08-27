@@ -57,13 +57,46 @@
 }
 
 .roulette {
+  background-color: aqua;
+  width: 336px;
+  height: 320px;
+
+  position: absolute;
+  top: 90px;
+  right: 0;
+
+  border-radius: 50%;
+  border: 14px solid $colYellow;
+
   @include mq(mob-only) {
     display: none;
   }
 }
 .roulette__images {
 }
-.button-roul-aft {
+.button-roul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 28px;
+  padding: 4px 0 0;
+
+  background-color: $colWhite--Full;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
 }
-.button-roul-bef {
+.button-roul--aft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(180deg) translate(22px, 50%);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.button-roul--bef {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(22px, -50%);
 }
