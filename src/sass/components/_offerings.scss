@@ -1,6 +1,5 @@
 .offerings {
 padding-top: 50px;
-max-width: 100%;
 
 background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@1x.png);
 
@@ -8,11 +7,10 @@ background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@1x.png);
         background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@2x.png)
     }
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
 
 @include mq(tab-only) {
     padding-top:42px;
-    padding-bottom: 100px;
 
     background-image: url(../images/offerings/offerings-tab/offerings_bg-md@1x.png);
 
@@ -24,7 +22,6 @@ background-size: 100% 100%;
 
 @include mq(desk) {
 padding-top: 177px;
-    padding-bottom: 75px;
     background-image: url(../images/offerings/offerings-desk/offerings_bg-lg@1x.png);
     
     @include mq(retina) {
@@ -91,43 +88,25 @@ max-width: 526px;
     }
 
     &__title {
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 1.2;
         margin-bottom: 28px;
 
-@include mq(mob-only) {
-    max-width: 280px;
-    font-size: 28px;
-    line-height: calc(33 / 28);
-}
-
-        @include mq(tab) {
-margin-bottom: 20px;
-line-height: calc(49 / 42);
+        @include mq(mob-only) {
+            max-width: 280px;
         }
-        
-    }
+    
+        @include mq(tab) {
+            margin-bottom: 20px;
+        }
+    
+        }
 
     &__desc {
         @include mq(mob-only) {
             margin-bottom: 28px;
-        }
-
-
-
-        @include mq(tab) {
-    font-size: 16px;
-        line-height: calc(19 / 16);
-        }
-
-        @include mq(desk) {
-            line-height: calc(24 / 16);
-        }
-    
+        } 
     }
 
-    &__txt {
+    &__text {
         @include mq(desk) {
     line-height: calc(21 / 14);
         }
@@ -179,32 +158,29 @@ line-height: calc(49 / 42);
 }
 
 
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 106px;
-        min-height: 40px;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 1.5;
-        color: #2C2C2C;
+&__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+margin-top: 28px;
 
-        background-color: #FFFFFF;
-        border: 2px solid #7EB101;
-        border-radius: 30px;
+@include mq(tab) {
+margin-top: 40px;
+}
 
-        margin-top: 32px;
-    }
+@include mq(desk) {
+    margin-top: 32px;
+}
 
-    &__details {
+
+}
+
+    &__link {
+
         @include mq (desk) {
             display: none;
         }
     }
 
 }
-
-
-
 
