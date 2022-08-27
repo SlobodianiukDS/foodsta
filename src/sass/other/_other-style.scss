@@ -6,9 +6,23 @@ body{
 }
 
 .container{
-    width: 1280px;
-    padding: 0 16px;
+    width: 320px;
+    padding: 0 20px;
     margin: 0 auto;
+    @include mq(tab){
+        width: 768px;
+        padding: 0 32px;
+    };
+    @include mq(desk){
+        width: 1280px;
+        padding: 0 16px;
+}
+}
+.section{
+    padding: 60px 0;
+    @include mq(tab){
+    padding: 100px 0;
+    };
 }
 
 // контейнер для позиционированния (можно использовать и на списки(ul) )
