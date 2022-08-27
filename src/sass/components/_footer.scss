@@ -1,69 +1,62 @@
-
-.footer__nav-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-}
-
-.footer__nav {
-    display: flex;
-    gap: 81px;
-    margin-bottom: 40px;
-}
-.footer .nav__list{
+footer .form{
     display: flex;
     gap: 20px;
     flex-direction: column;
-}
-.footer__logo{
-    display: inline-block;
-}
-
-.footer__subscribe{
-    display: flex;
-    flex-direction: column;
-}
-
-// .footer__subscribe-title{
-//     font-weight: 500;
-//     line-height: calc(21 / 14);
-// }
-
-.footer__agreement{
-    font-size: 10px;
-    line-height: calc(12 / 10);
-}
-
-.footer__legal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-.footer__legal-list{
-    display: flex;
-    gap: 34px;
-}
-
-.subscribe__text{
-font-weight: 500;
-    line-height: calc(21 / 14);
-}
-
-.subscribe__input{
     max-width: 440px;
     width: 100%;
-
-    font-size: 12px;
-    line-height: calc(18 / 12);
-    color: #505050;
-  }
-
-  .light__btn{
-    width: 50px;
-  }
-
-  .nav__link{
-    color: #000000;
-  }
+}
+.footer {
+    &__nav-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    
+    &__nav {
+        display: flex;
+        gap: 81px;
+        margin-bottom: 40px;
+    }
+    & .nav__list{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    &__logo{
+        display: inline-block;
+    }
+    
+    &__subscribe{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__agreement{
+        font-size: 10px;
+        line-height: calc(12 / 10);
+    }
+    
+    &__legal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    &__legal-list{
+        display: flex;
+        gap: 34px;
+    }
+    
+    &__legal-link{
+        font-size: 10px;
+        line-height: calc(12 / 10);
+    }
+    
+    &__subscribe-text{
+        font-weight: 500;
+        line-height: calc(21 / 14);
+        margin-bottom: 12px;
+        display: inline-block;
+    }
+} 

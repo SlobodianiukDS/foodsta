@@ -1,0 +1,51 @@
+.form{
+    &__label{
+    position: relative;
+    display: block;
+    }
+    &__input{
+    width: 100%;
+    padding: 12px;
+
+    font-size: 12px;
+    line-height: calc(18 / 12);
+
+    background: $colWhite--Full;
+    border: 0.854167px solid;
+    border-radius: 30px;
+    }
+
+    &__input:invalid:placeholder-shown{
+    border-color: $colYellow;
+    }
+
+    &__input:valid {
+    border-color: $colGreen;
+    }
+
+    &__input:invalid {
+    border-color: $colRed;
+    }
+
+    &__input:not(:placeholder-shown) ~ &__notification{
+    opacity: 1;}
+
+    &__input:valid:not(:placeholder-shown) ~ &__notification{
+    opacity: 0;}
+
+    &__input::placeholder {
+    color: $textSecondary;
+    }
+
+    &__notification{
+    display: inline-block;
+    position: absolute;
+
+    opacity: 0;
+    left: 0;
+    bottom: -15px;
+    font-size: 10px;
+    line-height: calc(15 / 10);
+    color: $colRed;
+    }
+}
