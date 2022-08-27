@@ -1,0 +1,62 @@
+footer .form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    max-width: 440px;
+    width: 100%;
+}
+.footer {
+    &__nav-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    
+    &__nav {
+        display: flex;
+        gap: 81px;
+        margin-bottom: 40px;
+    }
+    & .nav__list{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    &__logo{
+        display: inline-block;
+    }
+    
+    &__subscribe{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__agreement{
+        font-size: 10px;
+        line-height: calc(12 / 10);
+    }
+    
+    &__legal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    &__legal-list{
+        display: flex;
+        gap: 34px;
+    }
+    
+    &__legal-link{
+        font-size: 10px;
+        line-height: calc(12 / 10);
+    }
+    
+    &__subscribe-text{
+        font-weight: 500;
+        line-height: calc(21 / 14);
+        margin-bottom: 12px;
+        display: inline-block;
+    }
+} 
