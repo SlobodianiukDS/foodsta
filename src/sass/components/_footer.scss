@@ -1,26 +1,41 @@
-footer .form{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    max-width: 440px;
-    width: 100%;
-}
 .footer {
     &__nav-box {
         display: flex;
         flex-direction: column;
         margin-bottom: 60px;
+
+        @include mq(tab){
+            margin-bottom: 100px;
+        }
+
+        @include mq(desk) {
+            margin-bottom: 80px;
+            flex-direction: row;
+        }
     }
     
     &__nav {
         display: flex;
-        gap: 81px;
         margin-bottom: 40px;
+
+        @include mq(tab) {
+            align-items: center;
+        }
     }
-    & .nav__list{
+    &__nav-list{
         display: flex;
         gap: 20px;
         flex-direction: column;
+
+        margin-right: 101px;
+        margin-left: auto;
+
+        @include mq(tab) {
+            flex-direction: row;
+            margin-left: 114px;
+            margin-right: auto;
+            gap: 28px;
+        }
     }
     &__logo{
         display: inline-block;
@@ -29,11 +44,19 @@ footer .form{
     &__subscribe{
         display: flex;
         flex-direction: column;
+
+        @include mq(desk) {
+            margin-left: auto;
+        }
     }
     
     &__agreement{
         font-size: 10px;
         line-height: calc(12 / 10);
+    }
+    &__agreement-link{
+        text-decoration: underline;
+        color: $colGreen;
     }
     
     &__legal{
@@ -42,15 +65,26 @@ footer .form{
         align-items: center;
         justify-content: center;
         gap: 40px;
+
+        @include mq(tab) {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
     }
     &__legal-list{
         display: flex;
         gap: 34px;
+
+        @include mq(tab) {
+            gap: 20px;
+        }
     }
     
     &__legal-link{
         font-size: 10px;
         line-height: calc(12 / 10);
+        text-decoration: underline;
+        color: $colGreen;
     }
     
     &__subscribe-text{
@@ -58,5 +92,42 @@ footer .form{
         line-height: calc(21 / 14);
         margin-bottom: 12px;
         display: inline-block;
+    }
+    &__form{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+
+        @include mq(tab) {
+        flex-direction: row;
+        margin-bottom: 12px;
+        gap: 13px;
+        }
+    }
+    &__form-label{
+        max-width: 440px;
+        @include mq(tab){width: 279px;}
+    }
+
+    &__btn{
+        margin-left: auto;
+        width: 103px;
+        @include hov{
+            background:$colYellow;
+        }
+        @include mq(tab){
+            margin-left: 0;
+        }
+    }
+
+    &__text{
+        font-size: 10;
+        line-height: calc(12 / 10);
+
+        @include mq(tab){
+            margin-left: auto;
+        }
     }
 } 
