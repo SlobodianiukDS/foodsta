@@ -1,10 +1,10 @@
 .offerings {
   padding-top: 50px;
 
-  background-image: url(images/offerings/offerings-mob/offerings_bg-sm@1x.png);
+  background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@1x.png);
 
   @include mq(retina) {
-    background-image: url(images/offerings/offerings-mob/offerings_bg-sm@2x.png);
+    background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@2x.png);
   }
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,19 +12,19 @@
   @include mq(tab-only) {
     padding-top: 42px;
 
-    background-image: url(images/offerings/offerings-tab/offerings_bg-md@1x.png);
+    background-image: url(../images/offerings/offerings-tab/offerings_bg-md@1x.png);
 
     @include mq(retina) {
-      background-image: url(images/offerings/offerings-tab/offerings_bg-md@2x.png);
+      background-image: url(../images/offerings/offerings-tab/offerings_bg-md@2x.png);
     }
   }
 
   @include mq(desk) {
     padding-top: 177px;
-    background-image: url(images/offerings/offerings-desk/offerings_bg-lg@1x.png);
+    background-image: url(../images/offerings/offerings-desk/offerings_bg-lg@1x.png);
 
     @include mq(retina) {
-      background-image: url(images/offerings/offerings-desk/offerings_bg-lg@2x.png);
+      background-image: url(../images/offerings/offerings-desk/offerings_bg-lg@2x.png);
     }
   }
 
@@ -142,11 +142,11 @@
   }
 
   &__delivery::before {
-    background-image: url(images/offerings/svg/delivery.svg);
+    background-image: url(../images/offerings/svg/delivery.svg);
   }
 
   &__order::before {
-    background-image: url(images/offerings/svg/oder.svg);
+    background-image: url(../images/offerings/svg/oder.svg);
   }
 
   &__actions {
