@@ -1,0 +1,25 @@
+.button {
+  @include text(13px, 19px, 500);
+
+  padding: 6px 18px;
+
+  background: $colGreen-light;
+  border-radius: 30px;
+
+  @include hov {
+    background: $colGreen-light--hover;
+  }
+}
+.button--white {
+  @include text(13px, 19px, 500);
+
+  padding: 10px 22px;
+
+  background: $colWhite--Full;
+  border: 2px solid $colGreen;
+  border-radius: 30px;
+
+  @include hov {
+    border-color: $colGreen--hover;
+  }
+}
