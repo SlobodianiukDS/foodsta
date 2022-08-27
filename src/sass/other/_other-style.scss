@@ -1,7 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    @include text();
     color: $textPrimaryCol;
 }
 
