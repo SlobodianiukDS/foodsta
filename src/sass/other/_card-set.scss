@@ -1,17 +1,22 @@
-$card-gap: 32px;
-$card-item: 1;
-
+:root {
+    --card-gap: 32px;
+    --card-item: 1;
+}
 
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    gap: $card-gap;
+    gap: var(--card-gap);
 
     @include mq(tab) {
-        $card-item: 2;
+        --card-item: 2;
     }
 }
 
+
+
 .card-item {
-    flex-basis: calc((100% - ($card-item - 1) * $card-gap) / $card-item);
+
+    flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gap)) / var(--card-item));
+
 }

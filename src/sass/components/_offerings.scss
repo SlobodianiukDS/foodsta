@@ -1,5 +1,6 @@
 .offerings {
 padding-top: 50px;
+max-width: 100%;
 
 background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@1x.png);
 
@@ -7,7 +8,7 @@ background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@1x.png);
         background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@2x.png)
     }
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 100% 100%;
 
 @include mq(tab-only) {
     padding-top:42px;
@@ -30,6 +31,10 @@ padding-top: 177px;
      background-image: url(../images/offerings/offerings-desk/offerings_bg-lg@2x.png);
     }
         
+}
+
+&__container {
+    padding: 20px 28px;
 }
     &__thumb {
         @include mq (desk) {
@@ -92,53 +97,72 @@ max-width: 526px;
         font-weight: 700;
         font-size: 42px;
         line-height: 1.2;
-        color: #2C2C2C;
         margin-bottom: 28px;
+
+@include mq(mob-only) {
+    max-width: 280px;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+}
 
         @include mq(tab) {
 margin-bottom: 20px;
+line-height: calc(49 / 42);
         }
         
     }
 
     &__desc {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #2C2C2C;
-
-        &desc:not(:last-child) {
-            margin-bottom: 40px;
+        @include mq(mob-only) {
+            margin-bottom: 28px;
         }
+
+
+
+        @include mq(tab) {
+    font-size: 16px;
+        line-height: calc(19 / 16);
+        }
+
+        @include mq(desk) {
+            line-height: calc(24 / 16);
+        }
+    
     }
 
     &__txt {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #2C2C2C;
+        @include mq(desk) {
+    line-height: calc(21 / 14);
+        }
     }
 
     &__subtitle {
         font-weight: 700;
-        font-size: 17.0833px;
-        line-height: 1.4;
-        color: #2C2C2C;
+        font-size: 18px;
+        line-height: calc(21 / 18);
         margin-bottom: 16px;
     }
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
+        gap: 28px;
 
-        gap: 67px;
-        padding: 0;
+        @include mq(tab-only) { 
+        --card-gap: 116px;
+        --card-item: 2;
+        }
+
+        @include mq(desk) {
+        --card-gap: 67px;
+        --card-item: 2;
+        }
+      
     }
 
     &__item {
-        flex-basis: calc((100% - 67px) / 2);
         position: relative;
-        padding-top: 68px;
+        padding-top: 56px;
 
-        &__::before {
+        &::before {
             content: '';
             position: absolute;
             top: 0;
@@ -153,7 +177,7 @@ margin-bottom: 20px;
     background-image: url(../images/offerings/svg/delivery.svg);
 }
 
-&_order::before {
+&__order::before {
     background-image: url(../images/offerings/svg/oder.svg);
 }
 
