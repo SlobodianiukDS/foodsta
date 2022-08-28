@@ -117,9 +117,7 @@ margin-right: 29px;
   }
 
   &__subtitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(21 / 18);
+    @include text(18px, 21px, 700);
     margin-bottom: 16px;
   }
 
@@ -174,9 +172,8 @@ margin-right: 29px;
     &__link {
         display: flex;
         align-items: center;
-        font-weight: 500;
-        line-height: calc(20 / 14);
-        padding: 7px 0;
+        @include text(14px, 24px, 500);
+        padding: 10px 0;
         color: #000000;
         cursor: pointer;
 
@@ -190,8 +187,6 @@ margin-right: 29px;
       display: none;
     }
   }
-
-
 
 }
 
