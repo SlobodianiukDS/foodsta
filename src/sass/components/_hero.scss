@@ -4,10 +4,6 @@
     $colWhite 20px,
     $colWhite
   );
-  padding-top: 60px;
-  @include mq(tab) {
-    padding-top: 100px;
-  }
 }
 .hero__container {
 }

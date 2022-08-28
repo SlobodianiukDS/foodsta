@@ -1,9 +1,4 @@
 .footer {
-  padding-top: 60px;
-  @include mq(tab) {
-    padding-top: 100px;
-  }
-
   &__nav-box {
     display: flex;
     flex-direction: column;
