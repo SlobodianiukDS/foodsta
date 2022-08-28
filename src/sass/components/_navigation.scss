@@ -1,0 +1,39 @@
+.navigation {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @include mq(tab) {
+        display: flex;
+        margin-left: auto;  
+        gap: 28px;             
+    }    
+}
+.navigation__button {        
+    @include text(14px, 21px, 400);
+}
+
+.nav {  
+
+    @include mq(tab) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+.nav__list {
+    display: flex;
+    gap: 28px;
+}
+.nav__link {    
+text-align: center;
+        padding-top: 28px;
+        padding-bottom: 28px;
+
+        @include hov {
+            color: $colGreen-light;        
+        }
+}
+.nav__link--current {
+    color: $colGreen-light;    
+}

@@ -1,0 +1,34 @@
+.header__container {
+  display: flex;
+  align-items: center;  
+}
+
+.logo {
+    display: inline-block;
+    height: 52px;
+  }
+
+.mobile-menu {
+  margin-left: auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 30px; 
+
+  @include mq(tab) {
+    display: none;
+  }
+}
+
+.mobile-menu__button {
+    display: block;
+    padding: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: $colWhite--Full;
+}
+
+.mobile-menu__icon {
+    fill: $colGreen;
+  }
+
