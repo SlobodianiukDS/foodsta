@@ -48,6 +48,9 @@
   @include mq(mob-only) {
     display: none;
   }
+  @include mq(desk) {
+    top: -30%;
+  }
 }
 .slider {
   position: relative;
