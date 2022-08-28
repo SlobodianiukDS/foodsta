@@ -1,5 +1,5 @@
 .button {
-  @include text(13px, 19px, 500);
+  @include text(13px, 20px, 500);
 
   padding: 6px 18px;
 
@@ -11,7 +11,7 @@
   }
 }
 .button--white {
-  @include text(13px, 19px, 500);
+  @include text(13px, 20px, 500);
 
   padding: 10px 22px;
 
@@ -22,4 +22,34 @@
   @include hov {
     border-color: $colGreen--hover;
   }
+}
+
+.button-roul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 28px;
+  padding: 4px 0 0;
+
+  background-color: $colWhite--Full;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  @include hov {
+    fill: $colGreen;
+  }
+}
+.button-roul--aft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(180deg) translate(22px, 50%);
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.06);
+}
+.button-roul--bef {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(22px, -50%);
 }

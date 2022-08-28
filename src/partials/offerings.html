@@ -5,10 +5,10 @@
                <picture class="offerings__img"> 
                 <source media="(min-width: 1280px)" 
                 srcset="images/offerings/offerings-desk/apple-lg@1x.webp 1x, 
-                ./images/offerings/offerings-desk/apple-lg@2x.webp 2x" 
+                images/offerings/offerings-desk/apple-lg@2x.webp 2x" 
                 type="image/webp">
                 <source media="(min-width: 1280px)" 
-                srcset="./images/offerings/offerings-desk/apple-lg@1x.png 1x, 
+                srcset="images/offerings/offerings-desk/apple-lg@1x.png 1x, 
                 images/offerings/offerings-desk/apple-lg@2x.png 2x" 
                 type="image/png">
             <source media="(max-width: 767px)" 
@@ -25,8 +25,8 @@
               />
             </picture>
               </div>
-            <div class="offerings__tab-img">
-            <picture>
+            <div class="offerings__tab-img-wrapper">
+            <picture class="offerings__tab-img">
                     <source media="(min-width: 768px)" 
                 srcset="images/offerings/offerings-tab/apple_1-md@1x.webp 1x,
                 images/offerings/offerings-tab/apple_1-md@2x.webp 2x" 
@@ -40,7 +40,8 @@
                 width="357"
                 height="394">
             </picture>
-            <picture>
+            
+            <picture class="offerings__tab-img">
                 <source media="(min-width: 768px)" 
                 srcset="images/offerings/offerings-tab/apple_2-md@1x.webp 1x,
                 images/offerings/offerings-tab/apple_2-md@2x.webp 2x" 
@@ -55,7 +56,7 @@
                 height="211">
             </picture>
 
-            <picture>
+            <picture class="offerings__tab-img">
                 <source media="(min-width: 768px)" 
                 srcset="images/offerings/offerings-tab/apple_3-md@1x.webp 1x,
                 images/offerings/offerings-tab/apple_3-md@2x.webp 2x" 
@@ -101,8 +102,9 @@
 </ul>
 </div>
 <div class="offerings__actions">
-              <button class="offerings__btn btn">Order Now</button>
-              <a class="offerings__link">Read More <svg width="14" height="14">
+              <button class="offerings__btn button--white">Order Now</button>
+              <a class="offerings__link" href="./">Read More 
+              <svg class="offerings__icon" width="14" height="14">
               <use href="./images/svg/icons.svg#arrow-right">
               </use>
               </svg>
