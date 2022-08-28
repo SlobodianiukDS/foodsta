@@ -65,6 +65,7 @@
 .mobile-menu__link {  
   display: block;
   width: 100%;  
+  @include text(16px, 19px);
   
 }
 .mobile-menu__item {
