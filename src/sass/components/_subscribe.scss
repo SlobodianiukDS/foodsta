@@ -9,6 +9,10 @@
 }
 
 .subscribe__container {
+  @include mq(tab-only){
+    padding-top: 60px;
+    position: relative;
+  }
 
   @include mq(desk) {
     display: flex;
@@ -16,7 +20,18 @@
     flex-direction: row-reverse;
   }
 }
-
+.subscribe__box {
+  @include mq(mob) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  @include mq(tab) {
+    max-width: 704px;  
+  }
+  @include mq(desk) {
+    max-width: 1280px;  
+  }
+}
 
 .subscribe__container .title {
     @include text(28px, 34px, 700);
@@ -50,10 +65,16 @@
 
 
 .subscribe__pic {
+  display: flex;
+  justify-content: center; 
   margin-bottom: 17px;
 
+
   @include mq(tab-only) {
-    margin-bottom: 20px;
+position: absolute;
+top: -90px;
+right: 0;
+    // margin-bottom: 20px;
   }
 }
 
