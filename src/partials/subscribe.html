@@ -8,9 +8,6 @@
           images/subscribe/subscribe-desk/banan-lg@1x.png 1x,
           images/subscribe/subscribe-desk/banan-lg@2x.png 2x
         "
-
-        width="608"
-        height="266"
         type="image/png"
       />
       <source
@@ -19,8 +16,6 @@
           images/subscribe/subscribe-desk/banan-lg@1x.webp 1x,
           images/subscribe/subscribe-desk/banan-lg@2x.webp 2x
         "
-        width="608"
-        height="266"
         type="image/webp"
       />
       <source
@@ -29,8 +24,6 @@
           images/subscribe/subscribe-tab/banan-md@1x.png 1x,
           images/subscribe/subscribe-tab/banan-md@2x.png 2x
         "
-        width="281"
-        height="136"
         type="image/png"
       />
       <source
@@ -39,8 +32,6 @@
           images/subscribe/subscribe-tab/banan-md@1x.webp 1x,
           images/subscribe/subscribe-tab/banan-md@2x.webp 2x
         "
-        width="281"
-        height="136"
         type="image/webp"
       />
       <source
@@ -48,8 +39,7 @@
         srcset="
           images/subscribe/subscribe-mob/banan-sm@1x.png 1x,
           images/subscribe/subscribe-mob/banan-sm@2x.png 2x
-        width="280"
-        height="78"
+          "
         type="image/png"
       />
       <source
@@ -64,8 +54,8 @@
         class="subscribe__img"
         src="images/subscribe/subscribe-desk/banan-lg@1x.png"
         alt="Банан"
-        width="608"
-        height="266"
+        width=""
+        height=""
       />
     </picture>
     <div class="subscribe__box">
@@ -78,15 +68,23 @@
         <form autocomplete="on" class="form" name="subscribe__form">
           <label class="form__label">
             <input
-              name="mailing"
+              name="email"
               type="email"
               class="form__input"
               placeholder="Enter your email"
               required
             />
+            <span class="form__notification">Not a valid email address (example@email.com)</span>
           </label>
           <button type="submit" class="form__button button">Subscribe</button>
         </form>
+        <!-- <form class="footer__form form" name="subscribe__form">
+          <label class="footer__form-label form__label">
+          <input class="footer__form-input form__input" type="email" name="email" placeholder="Enter your email" required/>
+          <span class="form__notification">Not a valid email address (example@email.com)</span>    
+          </label>
+          <button type="submit" class="footer__btn button--white">Subscribe</button>
+      </form> -->
       </div>
     </div>    
   </div>

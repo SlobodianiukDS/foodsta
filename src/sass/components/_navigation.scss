@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     @include mq(tab) {
-        display: flex;
-        margin-left: auto;  
+        display: flex;  
+        margin-left: auto;             
         gap: 28px;             
     }    
 }
@@ -31,9 +31,11 @@ text-align: center;
         padding-bottom: 28px;
 
         @include hov {
-            color: $colGreen-light;        
+            color: $colGreen-light; 
+            text-decoration: underline;       
         }
 }
 .nav__link--current {
-    color: $colGreen-light;    
+    color: $colGreen-light; 
+    text-decoration: underline;   
 }
