@@ -45,11 +45,14 @@
   top: 90px;
   right: 0;
 
+  right: 22px;
+
   @include mq(mob-only) {
     display: none;
   }
   @include mq(desk) {
     top: -30%;
+    right: 22px;
   }
 }
 .slider {
@@ -71,15 +74,6 @@
   width: 292px;
   height: 292px;
 
-  &:nth-child(1) {
-    background-color: orangered;
-  }
-  &:nth-child(2) {
-    background-color: aquamarine;
-  }
-  &:nth-child(3) {
-    background-color: fuchsia;
-  }
   @include mq(desk) {
     width: 528px;
     height: 528px;
