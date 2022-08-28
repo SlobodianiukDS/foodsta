@@ -1,4 +1,5 @@
 .offerings {
+  max-width: 100%;
   padding-top: 50px;
 
   background-image: url(../images/offerings/offerings-mob/offerings_bg-sm@1x.png);
@@ -45,6 +46,10 @@
     }
   }
 
+  &__img {
+    margin: auto;
+  }
+
   &__tab-img-wrapper {
     display: flex;
     margin-bottom: 60px;
@@ -59,7 +64,7 @@
   }
 
   &__tab-img:first-child {
-margin-right: 29px;
+    margin-right: 29px;
   }
 
   &__tab-img:nth-child(2) {
@@ -88,7 +93,7 @@ margin-right: 29px;
 
   &__heading {
     @include mq(tab) {
-      max-width: 526px;
+      max-width: 544px;
     }
   }
 
@@ -167,15 +172,15 @@ margin-right: 29px;
     @include mq(tab) {
       margin-top: 40px;
     }
-}
+  }
 
-    &__link {
-        display: flex;
-        align-items: center;
-        @include text(14px, 24px, 500);
-        padding: 10px 0;
-        color: #000000;
-        cursor: pointer;
+  &__link {
+    display: flex;
+    align-items: center;
+    @include text(14px, 24px, 500);
+    padding: 10px 0;
+    color: #000000;
+    cursor: pointer;
 
     @include mq(desk) {
       margin-top: 32px;
@@ -187,8 +192,4 @@ margin-right: 29px;
       display: none;
     }
   }
-
 }
-
-
-
