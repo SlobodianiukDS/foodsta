@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     @include mq(tab) {
-        display: flex;  
+        display: flex;
+        margin-left: auto;  
         gap: 28px;             
     }    
 }
@@ -11,9 +12,7 @@
     @include text(14px, 21px, 400);
 }
 
-.nav {
-    display: none;   
-    
+.nav {  
 
     @include mq(tab) {
         display: flex;
@@ -27,19 +26,14 @@
     gap: 28px;
 }
 .nav__link {    
-        position: relative;
-        display: flex;
-        align-items: center;
+text-align: center;
         padding-top: 28px;
         padding-bottom: 28px;
 
         @include hov {
-            color: $colGreen-light;
-            text-decoration: underline; 
+            color: $colGreen-light;        
         }
 }
 .nav__link--current {
-    color: $colGreen-light;
-    text-decoration: underline; 
+    color: $colGreen-light;    
 }
-

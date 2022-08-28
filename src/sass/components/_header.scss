@@ -1,7 +1,6 @@
 .header__container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;  
 }
 
 .logo {
@@ -10,6 +9,7 @@
   }
 
 .mobile-menu {
+  margin-left: auto;
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 30px; 
@@ -24,7 +24,6 @@
     padding: 0;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
   border: none;
   background-color: $colWhite--Full;
 }
