@@ -1,0 +1,2 @@
+let t=0;const e=document.querySelector(".slider__carousel");document.querySelector(".button-roul--bef").addEventListener("click",(function(){t+=100/3,t>68&&(t=0),e.style.transform="translateX("+-t+"%)"})),document.querySelector(".button-roul--aft").addEventListener("click",(function(){t-=33.33333,t<0&&(t=66.66666),e.style.transform="translateX("+-t+"%)"}));
+//# sourceMappingURL=index.d6631b61.js.map
