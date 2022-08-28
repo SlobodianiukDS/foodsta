@@ -1,4 +1,67 @@
 .footer {
+  // background
+  background-image: url(../images/footer/footer-mob/mobile_fruit@1x.png),
+     url(../images/footer/footer-mob/mobile-apple@1x.png),
+    url(../images/footer/footer-mob/mobile-orange@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom center, 0% 25%, top right;
+  background-size: 253px 66px, 110px 116px, 104px 259px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/footer/footer-mob/mobile_fruit@2x.png),
+       url(../images/footer/footer-mob/mobile-apple@2x.png),
+       url(../images/footer/footer-mob/mobile-orange@2x.png);
+      
+      background-repeat: no-repeat;
+      background-position: bottom center, top left, top right;
+      background-size: 253px 66px, 110px 116px, 104px 259px;
+  }
+  // url(../images/footer/footer-mob/mobile_fruit@1x.webp),
+  // url(../images/footer/footer-mob/mobile-apple@1x.webp),
+  // url(../images/footer/footer-mob/mobile-orange@1x.webp);
+
+  // url(../images/footer/footer-mob/mobile_fruit@2x.webp),
+  // url(../images/footer/footer-mob/mobile-apple@2x.webp),
+  // url(../images/footer/footer-mob/mobile-orange@2x.webp);
+
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/footer/footer-tab/tab-fruit@1x.png),
+   url(../images/footer/footer-tab/tab-orange@1x.png);
+   background-position: bottom center, top right;
+   background-size: 100% auto, 203px 365px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/footer/footer-tab/tab-fruit@2x.png),
+        url(../images/footer/footer-tab/tab-orange@2x.png);
+
+        background-position: bottom center, top right;
+        background-size: 100% auto, 203px 365px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/footer/footer-desk/desk-fruit@1x.webp), url(../images/footer/footer-desk/desk-fruit@1x.png);
+    background-position: bottom center;
+    background-size: 1211px 266px;
+
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/footer/footer-desk/desk-fruit@2x.webp), url(../images/footer/footer-desk/desk-fruit@2x.png);
+        background-position: bottom center;
+        background-size: 1211px 266px;
+    }
+  }
+
   padding-top: 60px;
   @include mq(tab) {
     padding-top: 100px;
