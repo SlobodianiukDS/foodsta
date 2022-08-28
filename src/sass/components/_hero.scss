@@ -13,19 +13,6 @@
     margin: 0 auto;
   }
 }
-.title {
-  @include text(28px, 33px, 700);
-  margin-bottom: 28px;
-
-  @include mq(tab) {
-    @include text(42px, 50px, 700);
-    margin-bottom: 44px;
-  }
-  @include mq(desk) {
-    @include text(48px, 58px, 700);
-    margin-bottom: 28px;
-  }
-}
 .hero__title {
   margin-bottom: 28px;
   max-width: 280px;
@@ -35,13 +22,6 @@
   }
   @include mq(desk) {
     max-width: 502px;
-  }
-}
-.description {
-  @include text(14px, 21px);
-
-  @include mq(tab) {
-    @include text(16px, 24px);
   }
 }
 .hero__description {
@@ -56,7 +36,7 @@
   }
 }
 
-.roulette {
+.slider {
   background-color: aqua;
   width: 320px;
   height: 320px;
@@ -72,34 +52,15 @@
     display: none;
   }
 }
-.roulette__images {
-}
-.button-roul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.slider__image {
+  width: 292px;
+  height: 292px;
 
-  width: 34px;
-  height: 28px;
-  padding: 4px 0 0;
-
-  background-color: $colWhite--Full;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-  @include hov {
-    fill: $colGreen;
+  &:nth-child(1){
+background-color:orangered;
   }
-}
-.button-roul--aft {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: rotate(180deg) translate(22px, 50%);
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.06);
-}
-.button-roul--bef {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(22px, -50%);
+  &:nth-child(2){
+background-color:aquamarine;}
+  &:nth-child(3){
+background-color:fuchsia;}
 }
