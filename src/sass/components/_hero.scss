@@ -4,6 +4,10 @@
     $colWhite 20px,
     $colWhite
   );
+  padding-top: 60px;
+  @include mq(tab) {
+    padding-top: 100px;
+  }
 }
 .hero__container {
 }
@@ -46,16 +50,19 @@
   }
 }
 .slider {
-  background-color: aqua;
+  position: relative;
+  border-radius: 50%;
+  border: 14px solid $colYellow;
+  overflow: hidden;
+
   width: 320px;
   height: 320px;
 
-  position: relative;
-
-  border-radius: 50%;
-  border: 14px solid $colYellow;
-
-  overflow: hidden;
+  @include mq(desk) {
+    border-width: 26px;
+    width: 580px;
+    height: 580px;
+  }
 }
 .slider__image {
   width: 292px;
@@ -70,8 +77,14 @@
   &:nth-child(3) {
     background-color: fuchsia;
   }
+  @include mq(desk) {
+    width: 528px;
+    height: 528px;
+  }
 }
 .slider__carousel {
   display: flex;
   position: absolute;
+  transform: translateX(0%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -39,17 +39,28 @@
   @include hov {
     fill: $colGreen;
   }
+  @include mq(desk) {
+    width: 48px;
+    height: 40px;
+  }
 }
 .button-roul--aft {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: rotate(180deg) translate(22px, 50%);
+  transform: rotate(180deg) translate(8px, 50%);
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.06);
+  @include mq(desk) {
+    transform: rotate(180deg) translate(14px, 50%);
+  }
 }
 .button-roul--bef {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(22px, -50%);
+  transform: translate(8px, -50%);
+
+  @include mq(desk) {
+    transform: translate(14px, -50%);
+  }
 }
