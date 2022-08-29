@@ -1,0 +1,106 @@
+.subscribe { 
+  background-image: linear-gradient(
+    to top,
+    $colWhite--Gradient 2px,
+    $colWhite 20px,
+    $colWhite
+  );
+
+}
+
+.subscribe__container {
+  @include mq(tab-only){
+    padding-top: 60px;
+    position: relative;
+  }
+
+  @include mq(desk) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+.subscribe__box {
+  @include mq(mob) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  @include mq(tab) {
+    max-width: 704px;  
+  }
+  @include mq(desk) {
+    max-width: 1280px;  
+  }
+}
+
+.subscribe__container .title {
+    @include text(28px, 34px, 700);
+    margin-bottom: 20px;
+    color: $textPrimaryCol;
+    letter-spacing: 0.03em;
+  
+    @include mq(tab) {
+      @include text(42px, 50px, 700);
+      margin-bottom: 44px;
+    }
+    @include mq(desk) {
+      @include text(48px, 58px, 700);
+      margin-bottom: 28px;
+    }
+  }
+
+
+.subscribe__text {
+  margin-bottom: 40px;
+}
+
+.description {
+  @include text(14px, 21px);
+
+  @include mq(tab) {
+    margin-bottom: 24px;
+    @include text(16px, 24px);
+  }
+}
+
+
+.subscribe__pic {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 17px;
+
+
+  @include mq(tab-only) {
+position: absolute;
+top: -90px;
+right: 0;
+    // margin-bottom: 20px;
+  }
+}
+
+.subscribe__wrap {
+  text-align: end;
+
+  @include mq(tab) {
+    text-align: start;
+  }
+}
+
+.subscribe__wrap .form {
+  @include mq(tab) {
+    display: flex;
+    gap: 22px;
+  }
+}
+
+.subscribe__wrap .form__label {
+  @include mq(mob-only) {
+    margin-bottom: 20px;
+  }
+}
+
+.subscribe__wrap .form__input {
+  @include mq(tab) {
+    width: 394px;
+  }
+}
