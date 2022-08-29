@@ -1,3 +1,3 @@
 import('./js/slider');
 import('./js/mobile-menu');
-import('./mod');
+import('./js/mod');
