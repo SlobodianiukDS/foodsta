@@ -1,0 +1,90 @@
+.modal {
+    position: absolute;
+    max-height: 622px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: $colWhite--Full;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: opacity 500ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mq(noDesk) {
+        max-width: 100%;
+        width: 450px;
+    }
+
+    @include mq(desk) {
+        width: 528px;
+        min-height: 581px;
+    }
+
+    @media screen and (max-height: 420px) {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .backdrop.backdrop--is-hidden & {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    &__label {
+        margin-bottom: 4px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 40px;
+        padding: 12px 42px;
+        border-radius: 4px;
+
+        @include hov {
+            border-color: $colGreen;
+        }
+    }
+
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &__icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .modal-btn:hover &,
+        .modal-btn:focus & {
+            fill: $colGreen;
+        }
+    }
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    min-width: 200px;
+                    min-height: 50px;
+        
+        
+                    @include hov {
+                        background-color: $colYellow;
+                    }
+                }
+}
