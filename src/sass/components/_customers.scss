@@ -1,9 +1,10 @@
 .customers {
   background-image: url(../images/customers/customers-mob/customers_bg-sm.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 769px;
+  background-position: bottom center;
+  background-size: 100%;
   padding-bottom: 60px;
+  bottom: 0px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/customers/customers-tab/customers_bg-md.svg);
