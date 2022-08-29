@@ -138,21 +138,20 @@ button {
 // body {
 //   line-height: 1;
 // }
-// ol,
-// ul {
-//   list-style: none;
-// }
-// blockquote,
-// q {
-//   quotes: none;
-// }
-// blockquote:before,
-// blockquote:after,
-// q:before,
-// q:after {
-//   content: '';
-//   content: none;
-// }
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
 
 table {
   border-collapse: collapse;
