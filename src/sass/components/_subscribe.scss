@@ -1,13 +1,3 @@
-.subscribe { 
-  background-image: linear-gradient(
-    to top,
-    $colWhite--Gradient 2px,
-    $colWhite 20px,
-    $colWhite
-  );
-
-}
-
 .subscribe__container {
   @include mq(tab-only){
     padding-top: 60px;
@@ -54,8 +44,9 @@
   margin-bottom: 40px;
 }
 
-.description {
+.subscribe__box .description {
   @include text(14px, 21px);
+  padding: 0;
 
   @include mq(tab) {
     margin-bottom: 24px;
