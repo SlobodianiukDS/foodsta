@@ -48,7 +48,7 @@
 
 }
 
-.modal-btn {
+.modal-btn-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -74,4 +74,17 @@
             fill: $colGreen;
         }
     }
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    min-width: 200px;
+                    min-height: 50px;
+        
+        
+                    @include hov {
+                        background-color: $colYellow;
+                    }
+                }
 }

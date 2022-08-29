@@ -106,20 +106,6 @@
             line-height: calc(14 / 12);
         }
     }
-
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        min-width: 200px;
-        min-height: 50px;
-        
-
-        @include hov {
-        background-color: $colYellow;
-        }
-    }
 }
 
 .comment {
