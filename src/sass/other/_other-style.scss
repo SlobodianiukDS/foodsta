@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   @include text();
   color: $textPrimaryCol;
+  overflow: scroll;
 }
 .container {
   padding: 0 20px;
@@ -69,4 +70,7 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.no-scroll {
+  overflow: hidden;
 }
