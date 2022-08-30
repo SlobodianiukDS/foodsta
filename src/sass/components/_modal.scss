@@ -11,10 +11,10 @@
   border-radius: 4px;
   transition: opacity 500ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include mq(noDesk) {
-    max-width: 85%;
-    width: 450px;
-  }
+    @include mq(noDesk) {
+        max-width: 85%;
+        width: 450px;
+    }
 
   @include mq(desk) {
     width: 528px;
