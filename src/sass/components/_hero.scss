@@ -1,4 +1,8 @@
 .hero {
+  padding-top: 60px;
+@include mq (desk){
+  padding-top: 160px;
+}
 }
 .hero__container {
 }
