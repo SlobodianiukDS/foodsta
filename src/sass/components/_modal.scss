@@ -11,10 +11,10 @@
   border-radius: 4px;
   transition: opacity 500ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include mq(noDesk) {
-        max-width: 85%;
-        width: 450px;
-    }
+  @include mq(noDesk) {
+    max-width: 85%;
+    width: 450px;
+  }
 
   @include mq(desk) {
     width: 528px;
@@ -45,6 +45,19 @@
       border-color: $colGreen;
     }
   }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-width: 200px;
+    min-height: 50px;
+
+    @include hov {
+      background-color: $colYellow;
+    }
+  }
 }
 
 .modal-btn-close {
@@ -68,21 +81,9 @@
   &__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal-btn:hover &,
-    .modal-btn:focus & {
+    .modal-btn-close:hover &,
+    .modal-btn-close:focus & {
       fill: $colGreen;
-    }
-  }
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    min-width: 200px;
-    min-height: 50px;
-
-    @include hov {
-      background-color: $colYellow;
     }
   }
 }
