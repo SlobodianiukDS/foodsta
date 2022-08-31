@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%;
-  padding-bottom: 86px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/customers/customers-tab/customers_bg-md.svg);
@@ -65,6 +64,7 @@
 }
 
 .customers__icon {
+  display: block;
   fill: $colYellow;
   margin-bottom: 28px;
 }

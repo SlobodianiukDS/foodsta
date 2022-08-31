@@ -33,13 +33,14 @@
 }
 
 .favorites__img {
-  min-width: 280px;
-  min-height: 282px;
+  width: 100%;
+  // min-width: 280px;
+  // min-height: 282px;
   padding: calc(29px - 11px);
 
   background-color: $colWhite;
   border: 11px solid $colYellow;
-  border-radius: 139.658px;
+  border-radius: 50%;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -48,7 +49,7 @@
     min-height: 338px;
     padding: calc(35px - 14px);
     border: 14px solid $colYellow;
-    border-radius: 167.59px;
+    // border-radius: 167.59px;
   }
 
   @include mq(desk) {
@@ -85,7 +86,6 @@
     --card-item: 3;
   }
 }
-
 .favorites__card-item--tablet {
   @include mq(mob-only) {
     display: none;

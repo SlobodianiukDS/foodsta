@@ -1,9 +1,9 @@
 .offerings {
-  padding-top: 50px;
+  padding-top: 41px;
 
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: top;
+  background-position: top center;
   background-image: url(../images/offerings/svg/bg-mob.svg);
 
   @include mq(tab-only) {
@@ -33,6 +33,9 @@
 
   &__img {
     margin: auto;
+    @include mq(mob-only){
+    height: 309px;
+    }
   }
 
   &__wrapper {
@@ -69,8 +72,13 @@
   }
 
   &__desc {
+    line-height: 1,14;
     @include mq(mob-only) {
       margin-bottom: 28px;
+    line-height: 1,18;
+    }
+    @include mq(desk){
+      @include text(16px, 24px)
     }
   }
 
@@ -137,7 +145,7 @@
     display: flex;
     align-items: center;
     @include text(14px, 24px, 500);
-    padding: 10px 0;
+    padding: 7px 0;
     cursor: pointer;
 
     @include mq(desk) {

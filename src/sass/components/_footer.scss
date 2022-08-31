@@ -92,8 +92,7 @@
     gap: 20px;
     flex-direction: column;
 
-    margin-right: 101px;
-    margin-left: auto;
+    margin: 4px 101px 0 auto;
 
     @include mq(tab) {
       flex-direction: row;
@@ -116,8 +115,10 @@
   }
 
   &__agreement {
-    font-size: 10px;
-    line-height: calc(12 / 10);
+    @include text(10px,12px);
+    @include mq(tab){
+      @include text(12px,14px);
+    }
   }
   &__agreement-link {
     text-decoration: underline;
@@ -146,8 +147,10 @@
   }
 
   &__legal-link {
-    font-size: 10px;
-    line-height: calc(12 / 10);
+    @include text(10px,12px);
+    @include mq(tab){
+      @include text(12px,14px);
+    }
     text-decoration: underline;
     color: $colGreen;
   }
@@ -190,10 +193,9 @@
   }
 
   &__info-reserv {
-    font-size: 10;
-    line-height: calc(12 / 10);
-
-    @include mq(tab) {
+    @include text(10px,12px);
+    @include mq(tab){
+      @include text(12px,14px);
       margin-left: auto;
     }
   }

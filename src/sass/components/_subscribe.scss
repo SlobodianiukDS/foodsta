@@ -1,5 +1,5 @@
 .subscribe {
-  padding: 0;
+  padding-top: 0;
   margin-top: -50px;
   @include mq(tab) {
     margin-top: 16px;
@@ -21,11 +21,15 @@
   }
 }
 .subscribe__box {
+  @include text(14px, 16px);
+
   @include mq(mob) {
     max-width: 280px;
     margin: 0 auto;
   }
   @include mq(tab) {
+  @include text(16px, 24px);
+
     max-width: 704px;
   }
   @include mq(desk) {
