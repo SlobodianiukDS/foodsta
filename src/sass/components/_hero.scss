@@ -42,14 +42,13 @@
   top: 90px;
   right: 0;
 
-  right: 22px;
+  right: 32px;
 
   @include mq(mob-only) {
     display: none;
   }
   @include mq(desk) {
     top: -50%;
-    right: 22px;
   }
 }
 .slider {
