@@ -65,6 +65,7 @@ body{
 .mobile-menu.is-open {
   transform: translateX(0);
   opacity: 1;
+  pointer-events: all;
 }
 .mobile-menu__button {
   position: absolute;
@@ -80,6 +81,7 @@ body{
   border-radius: 50%;
   border: transparent;
   z-index: 999;
+  pointer-events: none;
 }
 
 .mobile-menu__link {
