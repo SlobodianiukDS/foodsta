@@ -1,7 +1,9 @@
 .hero {
   padding-top: 60px;
+
 @include mq (desk){
   padding-top: 160px;
+  padding-bottom: 40px;
 }
 }
 .hero__container {
@@ -46,7 +48,7 @@
     display: none;
   }
   @include mq(desk) {
-    top: -30%;
+    top: -50%;
     right: 22px;
   }
 }
